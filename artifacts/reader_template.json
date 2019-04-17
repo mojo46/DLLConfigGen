@@ -1,0 +1,5 @@
+{
+  "path": "hdfs://bighdpope/data/transit/irn_66929_pis/input/dfp/DB/pis_01_db/TABLES/%tablename%",
+  "type": "fixed",
+  "fields": "%fields%"
+}

@@ -1,0 +1,9 @@
+{
+  "path" : "hdfs://bighdpope/data/transit/irn_66929_pis/input/dfp/DB/pis_01_db/TABLES/car_model_prog_car_object",
+  "type" : "fixed",
+  "fields" : [ {
+    "name" : "car_objects_id"
+  }, {
+    "name" : "car_model_progs_id"
+  } ]
+}

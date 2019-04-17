@@ -1,0 +1,41 @@
+{
+  "type" : "orc",
+  "structures" : [ {
+    "name" : "car_cp_line_model",
+    "dbName" : "db_qa_irn_66929_pis",
+    "tablename" : "car_cp_line_model",
+    "isPersistHive" : true,
+    "mergeType" : "dumpsert",
+    "fields" : [ {
+      "name" : "id",
+      "isUnique" : false,
+      "fieldtype" : "bigint",
+      "comment" : ".  .  .  ."
+    }, {
+      "name" : "cp",
+      "isUnique" : false,
+      "fieldtype" : "timestamp",
+      "comment" : ".  .  .  ."
+    }, {
+      "name" : "DLL_VALIDITE",
+      "fieldtype" : "int",
+      "comment" : "LifeCycle"
+    }, {
+      "name" : "DLL_CHECKSUM",
+      "fieldtype" : "int",
+      "comment" : "Checksum of all columns except technicals columns"
+    }, {
+      "name" : "DLL_DATE_MAJ",
+      "fieldtype" : "date",
+      "comment" : "Update Date"
+    }, {
+      "name" : "DLL_DATE_CREATION",
+      "fieldtype" : "date",
+      "comment" : "Date of creation"
+    } ],
+    "outputPath" : "@nameNode@/@dll_output_path@/car_cp_line_model",
+    "commentOnTable" : ".....",
+    "extraWhereCond" : "",
+    "getHistoTable" : true
+  } ]
+}

@@ -1,0 +1,45 @@
+{
+  "path" : "hdfs://bighdpope/data/transit/irn_66929_pis/input/dfp/DB/pis_01_db/TABLES/car_cp_line_item",
+  "type" : "fixed",
+  "fields" : [ {
+    "name" : "id"
+  }, {
+    "name" : "cp"
+  }, {
+    "name" : "sub_model"
+  }, {
+    "name" : "fiscal_type"
+  }, {
+    "name" : "mandatory_flag"
+  }, {
+    "name" : "start_manufacturing_short_term"
+  }, {
+    "name" : "end_manufacturing_short_term"
+  }, {
+    "name" : "start_sales_short_term"
+  }, {
+    "name" : "end_sales_short_term"
+  }, {
+    "name" : "start_manufacturing_long_term"
+  }, {
+    "name" : "end_manufacturing_long_term"
+  }, {
+    "name" : "start_sales_long_term"
+  }, {
+    "name" : "end_sales_long_term"
+  }, {
+    "name" : "creation_date"
+  }, {
+    "name" : "created_by"
+  }, {
+    "name" : "updated_date"
+  }, {
+    "name" : "updated_by"
+  }, {
+    "name" : "version"
+  }, {
+    "name" : "car_item_id"
+  }, {
+    "name" : "car_cp_line_model_id"
+  } ]
+}

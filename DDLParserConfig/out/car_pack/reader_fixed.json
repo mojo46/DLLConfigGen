@@ -1,0 +1,17 @@
+{
+  "path" : "hdfs://bighdpope/data/transit/irn_66929_pis/input/dfp/DB/pis_01_db/TABLES/car_pack",
+  "type" : "fixed",
+  "fields" : [ {
+    "name" : "id"
+  }, {
+    "name" : "pack"
+  }, {
+    "name" : "creation_date"
+  }, {
+    "name" : "created_by"
+  }, {
+    "name" : "updated_date"
+  }, {
+    "name" : "updated_by"
+  } ]
+}

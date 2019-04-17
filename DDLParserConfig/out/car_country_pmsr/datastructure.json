@@ -1,0 +1,54 @@
+{
+  "name" : "car_country_pmsr",
+  "type" : "basic",
+  "fields" : [ {
+    "name" : "id",
+    "fieldType" : "bigint"
+  }, {
+    "name" : "code",
+    "fieldType" : "string"
+  }, {
+    "name" : "description",
+    "fieldType" : "string"
+  }, {
+    "name" : "class_type",
+    "fieldType" : "string"
+  }, {
+    "name" : "code_smacc",
+    "fieldType" : "string"
+  }, {
+    "name" : "cluster_level_1",
+    "fieldType" : "string"
+  }, {
+    "name" : "cluster_level_2",
+    "fieldType" : "string"
+  }, {
+    "name" : "cluster_level_3",
+    "fieldType" : "string"
+  }, {
+    "name" : "cluster_level_4",
+    "fieldType" : "string"
+  }, {
+    "name" : "cust_type",
+    "fieldType" : "string"
+  }, {
+    "name" : "channel",
+    "fieldType" : "string"
+  }, {
+    "name" : "creation_date",
+    "fieldType" : "timestamp"
+  }, {
+    "name" : "created_by",
+    "fieldType" : "string"
+  }, {
+    "name" : "updated_date",
+    "fieldType" : "timestamp"
+  }, {
+    "name" : "updated_by",
+    "fieldType" : "string"
+  }, {
+    "name" : "car_market_id",
+    "fieldType" : "bigint"
+  } ],
+  "filter" : null
+}

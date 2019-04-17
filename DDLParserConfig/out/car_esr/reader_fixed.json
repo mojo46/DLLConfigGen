@@ -1,0 +1,13 @@
+{
+  "path" : "hdfs://bighdpope/data/transit/irn_66929_pis/input/dfp/DB/pis_01_db/TABLES/car_esr",
+  "type" : "fixed",
+  "fields" : [ {
+    "name" : "id"
+  }, {
+    "name" : "code"
+  }, {
+    "name" : "rank"
+  }, {
+    "name" : "rank_3_p"
+  } ]
+}

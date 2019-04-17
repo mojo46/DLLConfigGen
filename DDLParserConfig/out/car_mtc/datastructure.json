@@ -1,0 +1,18 @@
+{
+  "name" : "car_mtc",
+  "type" : "basic",
+  "fields" : [ {
+    "name" : "id",
+    "fieldType" : "bigint"
+  }, {
+    "name" : "sub_model",
+    "fieldType" : "string"
+  }, {
+    "name" : "mtc",
+    "fieldType" : "string"
+  }, {
+    "name" : "rank_3_p",
+    "fieldType" : "string"
+  } ],
+  "filter" : null
+}

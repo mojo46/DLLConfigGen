@@ -1,0 +1,21 @@
+{
+  "path" : "hdfs://bighdpope/data/transit/irn_66929_pis/input/dfp/DB/pis_01_db/TABLES/car_option_without_pack",
+  "type" : "fixed",
+  "fields" : [ {
+    "name" : "id"
+  }, {
+    "name" : "no_pack"
+  }, {
+    "name" : "creation_date"
+  }, {
+    "name" : "created_by"
+  }, {
+    "name" : "updated_date"
+  }, {
+    "name" : "updated_by"
+  }, {
+    "name" : "car_model_prog_pfg_id"
+  }, {
+    "name" : "car_option_id"
+  } ]
+}

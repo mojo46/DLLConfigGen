@@ -1,0 +1,81 @@
+{
+  "type" : "orc",
+  "structures" : [ {
+    "name" : "car_region",
+    "dbName" : "db_qa_irn_66929_pis",
+    "tablename" : "car_region",
+    "isPersistHive" : true,
+    "mergeType" : "dumpsert",
+    "fields" : [ {
+      "name" : "id",
+      "isUnique" : true,
+      "fieldtype" : "bigint",
+      "comment" : ".  .  .  ."
+    }, {
+      "name" : "code",
+      "isUnique" : false,
+      "fieldtype" : "string",
+      "comment" : ".  .  .  ."
+    }, {
+      "name" : "rank",
+      "isUnique" : false,
+      "fieldtype" : "string",
+      "comment" : ".  .  .  ."
+    }, {
+      "name" : "active_flag",
+      "isUnique" : false,
+      "fieldtype" : "string",
+      "comment" : ".  .  .  ."
+    }, {
+      "name" : "description_english",
+      "isUnique" : false,
+      "fieldtype" : "string",
+      "comment" : ".  .  .  ."
+    }, {
+      "name" : "description_french",
+      "isUnique" : false,
+      "fieldtype" : "string",
+      "comment" : ".  .  .  ."
+    }, {
+      "name" : "creation_date",
+      "isUnique" : false,
+      "fieldtype" : "timestamp",
+      "comment" : ".  .  .  ."
+    }, {
+      "name" : "created_by",
+      "isUnique" : false,
+      "fieldtype" : "string",
+      "comment" : ".  .  .  ."
+    }, {
+      "name" : "updated_date",
+      "isUnique" : false,
+      "fieldtype" : "timestamp",
+      "comment" : ".  .  .  ."
+    }, {
+      "name" : "updated_by",
+      "isUnique" : false,
+      "fieldtype" : "string",
+      "comment" : ".  .  .  ."
+    }, {
+      "name" : "DLL_VALIDITE",
+      "fieldtype" : "int",
+      "comment" : "LifeCycle"
+    }, {
+      "name" : "DLL_CHECKSUM",
+      "fieldtype" : "int",
+      "comment" : "Checksum of all columns except technicals columns"
+    }, {
+      "name" : "DLL_DATE_MAJ",
+      "fieldtype" : "date",
+      "comment" : "Update Date"
+    }, {
+      "name" : "DLL_DATE_CREATION",
+      "fieldtype" : "date",
+      "comment" : "Date of creation"
+    } ],
+    "outputPath" : "@nameNode@/@dll_output_path@/car_region",
+    "commentOnTable" : ".....",
+    "extraWhereCond" : "",
+    "getHistoTable" : true
+  } ]
+}

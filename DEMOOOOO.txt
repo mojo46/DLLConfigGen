@@ -1,0 +1,18 @@
+java -cp DLLConfigGen-1.0-jar-with-dependencies.jar org.renault.dll.ddlparser.Driver D://Public//z025116//SampleDLLConfig//DEMO//paris_demo_dll.txt D://Public//z025116//SampleDLLConfig//DEMO//parser.properties D://Public//z025116//SampleDLLConfig//DEMO//PIS_Config.xlsx Y
+
+D://Public//z025116//SampleDLLConfig//Config.xlsx D://Public//z025116//SampleDLLConfig//persister_template.json D://Public//z025116//SampleDLLConfig//datastructure_template.json D://Public//z025116//SampleDLLConfig//reader_template.json db_qa_irn_66929_pis D://Public//z025116//SampleDLLConfig//target_WORK fixed Y Y
+
+
+java -cp DLLConfigGen-1.0-jar-with-dependencies.jar org.renault.dll.ddlparser.Driver D:\Public\DLLConfigGen\DDLParserConfig\paris_demo_dll.txt D:\Public\DLLConfigGen\DDLParserConfig\parser.properties  D:\Public\DLLConfigGen\DDLParserConfig\Config.xlsx Y
+
+
+
+
+ 
+
+ 
+ 
+ java -cp DLLConfigGen-1.0-jar-with-dependencies.jar org.renault.dll.jsongenerator.ConfigGen D:\Public\DLLConfigGen\DDLParserConfig\Config.xlsx D:\Public\DLLConfigGen\ConfigGen\persister_template.json D:\Public\DLLConfigGen\ConfigGen\datastructure_template.json D:\Public\DLLConfigGen\ConfigGen\reader_template.json db_qa_irn_66929_pis D:\Public\DLLConfigGen\DDLParserConfig\out fixed Y Y
+
+
+java -cp D:\DLLConfigGen\target\DLLConfigGen-1.0-jar-with-dependencies.jar org.renault.dll.jsongenerator.ConfigGen D:\DLLConfigGen\artifacts\DEMO\PIS_Config.xlsx D:\DLLConfigGen\artifacts\persister_template.json D:\DLLConfigGen\artifacts\datastructure_template.json D:\DLLConfigGen\artifacts\reader_template.json db_qa_irn_66929_pis D:\DLLConfigGen\DDLParserConfig\out fixed Y Y

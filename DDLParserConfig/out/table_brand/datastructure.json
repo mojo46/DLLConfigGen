@@ -1,0 +1,15 @@
+{
+  "name" : "table_brand",
+  "type" : "basic",
+  "fields" : [ {
+    "name" : "id",
+    "fieldType" : "bigint"
+  }, {
+    "name" : "apl",
+    "fieldType" : "string"
+  }, {
+    "name" : "brand",
+    "fieldType" : "string"
+  } ],
+  "filter" : null
+}

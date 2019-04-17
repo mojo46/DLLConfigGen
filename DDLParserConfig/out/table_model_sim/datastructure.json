@@ -1,0 +1,24 @@
+{
+  "name" : "table_model_sim",
+  "type" : "basic",
+  "fields" : [ {
+    "name" : "id",
+    "fieldType" : "bigint"
+  }, {
+    "name" : "brand_sim",
+    "fieldType" : "string"
+  }, {
+    "name" : "model_sim",
+    "fieldType" : "string"
+  }, {
+    "name" : "brand_3_p",
+    "fieldType" : "string"
+  }, {
+    "name" : "project_code",
+    "fieldType" : "string"
+  }, {
+    "name" : "car_type",
+    "fieldType" : "string"
+  } ],
+  "filter" : null
+}

@@ -1,0 +1,71 @@
+{
+  "type" : "orc",
+  "structures" : [ {
+    "name" : "car_option_without_pack",
+    "dbName" : "db_qa_irn_66929_pis",
+    "tablename" : "car_option_without_pack",
+    "isPersistHive" : true,
+    "mergeType" : "dumpsert",
+    "fields" : [ {
+      "name" : "id",
+      "isUnique" : true,
+      "fieldtype" : "bigint",
+      "comment" : ".  .  .  ."
+    }, {
+      "name" : "no_pack",
+      "isUnique" : false,
+      "fieldtype" : "bigint",
+      "comment" : ".  .  .  ."
+    }, {
+      "name" : "creation_date",
+      "isUnique" : false,
+      "fieldtype" : "timestamp",
+      "comment" : ".  .  .  ."
+    }, {
+      "name" : "created_by",
+      "isUnique" : false,
+      "fieldtype" : "string",
+      "comment" : ".  .  .  ."
+    }, {
+      "name" : "updated_date",
+      "isUnique" : false,
+      "fieldtype" : "timestamp",
+      "comment" : ".  .  .  ."
+    }, {
+      "name" : "updated_by",
+      "isUnique" : false,
+      "fieldtype" : "string",
+      "comment" : ".  .  .  ."
+    }, {
+      "name" : "car_model_prog_pfg_id",
+      "isUnique" : false,
+      "fieldtype" : "bigint",
+      "comment" : ".  .  .  ."
+    }, {
+      "name" : "car_option_id",
+      "isUnique" : false,
+      "fieldtype" : "bigint",
+      "comment" : ".  .  .  ."
+    }, {
+      "name" : "DLL_VALIDITE",
+      "fieldtype" : "int",
+      "comment" : "LifeCycle"
+    }, {
+      "name" : "DLL_CHECKSUM",
+      "fieldtype" : "int",
+      "comment" : "Checksum of all columns except technicals columns"
+    }, {
+      "name" : "DLL_DATE_MAJ",
+      "fieldtype" : "date",
+      "comment" : "Update Date"
+    }, {
+      "name" : "DLL_DATE_CREATION",
+      "fieldtype" : "date",
+      "comment" : "Date of creation"
+    } ],
+    "outputPath" : "@nameNode@/@dll_output_path@/car_option_without_pack",
+    "commentOnTable" : ".....",
+    "extraWhereCond" : "",
+    "getHistoTable" : true
+  } ]
+}

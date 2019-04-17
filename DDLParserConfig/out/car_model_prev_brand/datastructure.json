@@ -1,0 +1,39 @@
+{
+  "name" : "car_model_prev_brand",
+  "type" : "basic",
+  "fields" : [ {
+    "name" : "id",
+    "fieldType" : "bigint"
+  }, {
+    "name" : "prev_model",
+    "fieldType" : "string"
+  }, {
+    "name" : "pmsr_label_pc",
+    "fieldType" : "string"
+  }, {
+    "name" : "pmsr_label_lcc",
+    "fieldType" : "string"
+  }, {
+    "name" : "pmsr_project",
+    "fieldType" : "string"
+  }, {
+    "name" : "creation_date",
+    "fieldType" : "timestamp"
+  }, {
+    "name" : "created_by",
+    "fieldType" : "string"
+  }, {
+    "name" : "updated_date",
+    "fieldType" : "timestamp"
+  }, {
+    "name" : "updated_by",
+    "fieldType" : "string"
+  }, {
+    "name" : "smacc",
+    "fieldType" : "string"
+  }, {
+    "name" : "table_brand_id",
+    "fieldType" : "bigint"
+  } ],
+  "filter" : null
+}

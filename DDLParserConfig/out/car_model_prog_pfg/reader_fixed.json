@@ -1,0 +1,21 @@
+{
+  "path" : "hdfs://bighdpope/data/transit/irn_66929_pis/input/dfp/DB/pis_01_db/TABLES/car_model_prog_pfg",
+  "type" : "fixed",
+  "fields" : [ {
+    "name" : "id"
+  }, {
+    "name" : "history_flag"
+  }, {
+    "name" : "creation_date"
+  }, {
+    "name" : "created_by"
+  }, {
+    "name" : "updated_date"
+  }, {
+    "name" : "updated_by"
+  }, {
+    "name" : "car_model_prog_id"
+  }, {
+    "name" : "car_pfg_id"
+  } ]
+}

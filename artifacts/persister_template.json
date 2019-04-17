@@ -1,0 +1,15 @@
+{
+"type":"orc",
+  "structures":[{
+    "name":"%tablename%",
+    "dbName":"%dbname%",
+    "tablename":"%tablename%",
+    "isPersistHive":true,
+    "mergeType":"dumpsert",
+    "fields":"%fields%",
+	"outputPath":"@nameNode@/@dll_output_path@/%tablename%",
+    "commentOnTable":".....",
+    "extraWhereCond":"",
+    "getHistoTable": true
+  }]
+}

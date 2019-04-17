@@ -1,0 +1,9 @@
+{
+  "name" : "car_model_prev_market",
+  "type" : "basic",
+  "fields" : [ {
+    "name" : "id",
+    "fieldType" : "bigint"
+  } ],
+  "filter" : null
+}

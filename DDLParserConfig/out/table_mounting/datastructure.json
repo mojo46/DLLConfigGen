@@ -1,0 +1,24 @@
+{
+  "name" : "table_mounting",
+  "type" : "basic",
+  "fields" : [ {
+    "name" : "id",
+    "fieldType" : "bigint"
+  }, {
+    "name" : "department",
+    "fieldType" : "string"
+  }, {
+    "name" : "plant_name",
+    "fieldType" : "string"
+  }, {
+    "name" : "plant_name_short",
+    "fieldType" : "string"
+  }, {
+    "name" : "country",
+    "fieldType" : "string"
+  }, {
+    "name" : "industrial_region",
+    "fieldType" : "string"
+  } ],
+  "filter" : null
+}

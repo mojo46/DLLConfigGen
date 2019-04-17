@@ -1,0 +1,9 @@
+{
+  "name" : "car_model_prog_market_pfg",
+  "type" : "basic",
+  "fields" : [ {
+    "name" : "id",
+    "fieldType" : "bigint"
+  } ],
+  "filter" : null
+}

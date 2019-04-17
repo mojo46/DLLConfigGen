@@ -1,0 +1,61 @@
+{
+  "type" : "orc",
+  "structures" : [ {
+    "name" : "table_model_sim",
+    "dbName" : "db_qa_irn_66929_pis",
+    "tablename" : "table_model_sim",
+    "isPersistHive" : true,
+    "mergeType" : "dumpsert",
+    "fields" : [ {
+      "name" : "id",
+      "isUnique" : true,
+      "fieldtype" : "bigint",
+      "comment" : ".  .  .  ."
+    }, {
+      "name" : "brand_sim",
+      "isUnique" : false,
+      "fieldtype" : "string",
+      "comment" : ".  .  .  ."
+    }, {
+      "name" : "model_sim",
+      "isUnique" : false,
+      "fieldtype" : "string",
+      "comment" : ".  .  .  ."
+    }, {
+      "name" : "brand_3_p",
+      "isUnique" : false,
+      "fieldtype" : "string",
+      "comment" : ".  .  .  ."
+    }, {
+      "name" : "project_code",
+      "isUnique" : false,
+      "fieldtype" : "string",
+      "comment" : ".  .  .  ."
+    }, {
+      "name" : "car_type",
+      "isUnique" : false,
+      "fieldtype" : "string",
+      "comment" : ".  .  .  ."
+    }, {
+      "name" : "DLL_VALIDITE",
+      "fieldtype" : "int",
+      "comment" : "LifeCycle"
+    }, {
+      "name" : "DLL_CHECKSUM",
+      "fieldtype" : "int",
+      "comment" : "Checksum of all columns except technicals columns"
+    }, {
+      "name" : "DLL_DATE_MAJ",
+      "fieldtype" : "date",
+      "comment" : "Update Date"
+    }, {
+      "name" : "DLL_DATE_CREATION",
+      "fieldtype" : "date",
+      "comment" : "Date of creation"
+    } ],
+    "outputPath" : "@nameNode@/@dll_output_path@/table_model_sim",
+    "commentOnTable" : ".....",
+    "extraWhereCond" : "",
+    "getHistoTable" : true
+  } ]
+}

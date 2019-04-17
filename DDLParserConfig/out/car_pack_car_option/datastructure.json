@@ -1,0 +1,12 @@
+{
+  "name" : "car_pack_car_option",
+  "type" : "basic",
+  "fields" : [ {
+    "name" : "car_options_id",
+    "fieldType" : "bigint"
+  }, {
+    "name" : "car_packs_id",
+    "fieldType" : "bigint"
+  } ],
+  "filter" : null
+}

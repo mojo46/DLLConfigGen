@@ -1,0 +1,15 @@
+{
+  "path" : "hdfs://bighdpope/data/transit/irn_66929_pis/input/dfp/DB/pis_01_db/TABLES/table_market_aoc",
+  "type" : "fixed",
+  "fields" : [ {
+    "name" : "id"
+  }, {
+    "name" : "market_prev_prog"
+  }, {
+    "name" : "market_pc"
+  }, {
+    "name" : "market_lcv"
+  }, {
+    "name" : "language"
+  } ]
+}

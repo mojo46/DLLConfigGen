@@ -1,0 +1,21 @@
+{
+  "path" : "hdfs://bighdpope/data/transit/irn_66929_pis/input/dfp/DB/pis_01_db/TABLES/table_country_sim_pmsr",
+  "type" : "fixed",
+  "fields" : [ {
+    "name" : "id"
+  }, {
+    "name" : "country_sim_code"
+  }, {
+    "name" : "country_sim"
+  }, {
+    "name" : "country_smt"
+  }, {
+    "name" : "creation_date"
+  }, {
+    "name" : "created_by"
+  }, {
+    "name" : "updated_date"
+  }, {
+    "name" : "updated_by"
+  } ]
+}

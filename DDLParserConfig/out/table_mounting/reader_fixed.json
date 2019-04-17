@@ -1,0 +1,17 @@
+{
+  "path" : "hdfs://bighdpope/data/transit/irn_66929_pis/input/dfp/DB/pis_01_db/TABLES/table_mounting",
+  "type" : "fixed",
+  "fields" : [ {
+    "name" : "id"
+  }, {
+    "name" : "department"
+  }, {
+    "name" : "plant_name"
+  }, {
+    "name" : "plant_name_short"
+  }, {
+    "name" : "country"
+  }, {
+    "name" : "industrial_region"
+  } ]
+}

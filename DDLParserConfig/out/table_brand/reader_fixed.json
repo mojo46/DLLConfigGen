@@ -1,0 +1,11 @@
+{
+  "path" : "hdfs://bighdpope/data/transit/irn_66929_pis/input/dfp/DB/pis_01_db/TABLES/table_brand",
+  "type" : "fixed",
+  "fields" : [ {
+    "name" : "id"
+  }, {
+    "name" : "apl"
+  }, {
+    "name" : "brand"
+  } ]
+}

@@ -1,0 +1,21 @@
+{
+  "name" : "table_market_aoc",
+  "type" : "basic",
+  "fields" : [ {
+    "name" : "id",
+    "fieldType" : "bigint"
+  }, {
+    "name" : "market_prev_prog",
+    "fieldType" : "string"
+  }, {
+    "name" : "market_pc",
+    "fieldType" : "string"
+  }, {
+    "name" : "market_lcv",
+    "fieldType" : "string"
+  }, {
+    "name" : "language",
+    "fieldType" : "string"
+  } ],
+  "filter" : null
+}

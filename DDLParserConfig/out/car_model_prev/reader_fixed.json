@@ -1,0 +1,33 @@
+{
+  "path" : "hdfs://bighdpope/data/transit/irn_66929_pis/input/dfp/DB/pis_01_db/TABLES/car_model_prev",
+  "type" : "fixed",
+  "fields" : [ {
+    "name" : "id"
+  }, {
+    "name" : "rank"
+  }, {
+    "name" : "description_french"
+  }, {
+    "name" : "description_english"
+  }, {
+    "name" : "fiscal_type"
+  }, {
+    "name" : "commercial_segment"
+  }, {
+    "name" : "model_group"
+  }, {
+    "name" : "creation_date"
+  }, {
+    "name" : "created_by"
+  }, {
+    "name" : "updated_date"
+  }, {
+    "name" : "updated_by"
+  }, {
+    "name" : "car_brand_id"
+  }, {
+    "name" : "car_programmation_id"
+  }, {
+    "name" : "car_type_id"
+  } ]
+}

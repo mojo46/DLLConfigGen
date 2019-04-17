@@ -1,0 +1,12 @@
+{
+  "name" : "car_cp_line_model",
+  "type" : "basic",
+  "fields" : [ {
+    "name" : "id",
+    "fieldType" : "bigint"
+  }, {
+    "name" : "cp",
+    "fieldType" : "timestamp"
+  } ],
+  "filter" : null
+}

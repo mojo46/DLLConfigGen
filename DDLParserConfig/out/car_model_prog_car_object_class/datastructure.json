@@ -1,0 +1,12 @@
+{
+  "name" : "car_model_prog_car_object_class",
+  "type" : "basic",
+  "fields" : [ {
+    "name" : "car_object_classes_id",
+    "fieldType" : "bigint"
+  }, {
+    "name" : "car_model_progs_id",
+    "fieldType" : "bigint"
+  } ],
+  "filter" : null
+}

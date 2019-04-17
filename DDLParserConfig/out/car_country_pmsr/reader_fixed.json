@@ -1,0 +1,37 @@
+{
+  "path" : "hdfs://bighdpope/data/transit/irn_66929_pis/input/dfp/DB/pis_01_db/TABLES/car_country_pmsr",
+  "type" : "fixed",
+  "fields" : [ {
+    "name" : "id"
+  }, {
+    "name" : "code"
+  }, {
+    "name" : "description"
+  }, {
+    "name" : "class_type"
+  }, {
+    "name" : "code_smacc"
+  }, {
+    "name" : "cluster_level_1"
+  }, {
+    "name" : "cluster_level_2"
+  }, {
+    "name" : "cluster_level_3"
+  }, {
+    "name" : "cluster_level_4"
+  }, {
+    "name" : "cust_type"
+  }, {
+    "name" : "channel"
+  }, {
+    "name" : "creation_date"
+  }, {
+    "name" : "created_by"
+  }, {
+    "name" : "updated_date"
+  }, {
+    "name" : "updated_by"
+  }, {
+    "name" : "car_market_id"
+  } ]
+}

@@ -1,0 +1,46 @@
+{
+  "type" : "orc",
+  "structures" : [ {
+    "name" : "table_brand",
+    "dbName" : "db_qa_irn_66929_pis",
+    "tablename" : "table_brand",
+    "isPersistHive" : true,
+    "mergeType" : "dumpsert",
+    "fields" : [ {
+      "name" : "id",
+      "isUnique" : true,
+      "fieldtype" : "bigint",
+      "comment" : ".  .  .  ."
+    }, {
+      "name" : "apl",
+      "isUnique" : false,
+      "fieldtype" : "string",
+      "comment" : ".  .  .  ."
+    }, {
+      "name" : "brand",
+      "isUnique" : false,
+      "fieldtype" : "string",
+      "comment" : ".  .  .  ."
+    }, {
+      "name" : "DLL_VALIDITE",
+      "fieldtype" : "int",
+      "comment" : "LifeCycle"
+    }, {
+      "name" : "DLL_CHECKSUM",
+      "fieldtype" : "int",
+      "comment" : "Checksum of all columns except technicals columns"
+    }, {
+      "name" : "DLL_DATE_MAJ",
+      "fieldtype" : "date",
+      "comment" : "Update Date"
+    }, {
+      "name" : "DLL_DATE_CREATION",
+      "fieldtype" : "date",
+      "comment" : "Date of creation"
+    } ],
+    "outputPath" : "@nameNode@/@dll_output_path@/table_brand",
+    "commentOnTable" : ".....",
+    "extraWhereCond" : "",
+    "getHistoTable" : true
+  } ]
+}

@@ -1,0 +1,61 @@
+{
+  "type" : "orc",
+  "structures" : [ {
+    "name" : "table_mounting",
+    "dbName" : "db_qa_irn_66929_pis",
+    "tablename" : "table_mounting",
+    "isPersistHive" : true,
+    "mergeType" : "dumpsert",
+    "fields" : [ {
+      "name" : "id",
+      "isUnique" : true,
+      "fieldtype" : "bigint",
+      "comment" : ".  .  .  ."
+    }, {
+      "name" : "department",
+      "isUnique" : false,
+      "fieldtype" : "string",
+      "comment" : ".  .  .  ."
+    }, {
+      "name" : "plant_name",
+      "isUnique" : false,
+      "fieldtype" : "string",
+      "comment" : ".  .  .  ."
+    }, {
+      "name" : "plant_name_short",
+      "isUnique" : false,
+      "fieldtype" : "string",
+      "comment" : ".  .  .  ."
+    }, {
+      "name" : "country",
+      "isUnique" : false,
+      "fieldtype" : "string",
+      "comment" : ".  .  .  ."
+    }, {
+      "name" : "industrial_region",
+      "isUnique" : false,
+      "fieldtype" : "string",
+      "comment" : ".  .  .  ."
+    }, {
+      "name" : "DLL_VALIDITE",
+      "fieldtype" : "int",
+      "comment" : "LifeCycle"
+    }, {
+      "name" : "DLL_CHECKSUM",
+      "fieldtype" : "int",
+      "comment" : "Checksum of all columns except technicals columns"
+    }, {
+      "name" : "DLL_DATE_MAJ",
+      "fieldtype" : "date",
+      "comment" : "Update Date"
+    }, {
+      "name" : "DLL_DATE_CREATION",
+      "fieldtype" : "date",
+      "comment" : "Date of creation"
+    } ],
+    "outputPath" : "@nameNode@/@dll_output_path@/table_mounting",
+    "commentOnTable" : ".....",
+    "extraWhereCond" : "",
+    "getHistoTable" : true
+  } ]
+}

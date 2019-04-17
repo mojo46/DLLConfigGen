@@ -1,0 +1,24 @@
+{
+  "name" : "car_option",
+  "type" : "basic",
+  "fields" : [ {
+    "name" : "id",
+    "fieldType" : "bigint"
+  }, {
+    "name" : "code",
+    "fieldType" : "string"
+  }, {
+    "name" : "creation_date",
+    "fieldType" : "timestamp"
+  }, {
+    "name" : "created_by",
+    "fieldType" : "string"
+  }, {
+    "name" : "updated_date",
+    "fieldType" : "timestamp"
+  }, {
+    "name" : "updated_by",
+    "fieldType" : "string"
+  } ],
+  "filter" : null
+}

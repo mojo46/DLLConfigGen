@@ -1,0 +1,12 @@
+{
+  "name" : "car_object_class_car_object",
+  "type" : "basic",
+  "fields" : [ {
+    "name" : "car_objects_id",
+    "fieldType" : "bigint"
+  }, {
+    "name" : "car_object_classes_id",
+    "fieldType" : "bigint"
+  } ],
+  "filter" : null
+}

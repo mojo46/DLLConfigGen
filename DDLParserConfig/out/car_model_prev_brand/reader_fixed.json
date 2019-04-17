@@ -1,0 +1,27 @@
+{
+  "path" : "hdfs://bighdpope/data/transit/irn_66929_pis/input/dfp/DB/pis_01_db/TABLES/car_model_prev_brand",
+  "type" : "fixed",
+  "fields" : [ {
+    "name" : "id"
+  }, {
+    "name" : "prev_model"
+  }, {
+    "name" : "pmsr_label_pc"
+  }, {
+    "name" : "pmsr_label_lcc"
+  }, {
+    "name" : "pmsr_project"
+  }, {
+    "name" : "creation_date"
+  }, {
+    "name" : "created_by"
+  }, {
+    "name" : "updated_date"
+  }, {
+    "name" : "updated_by"
+  }, {
+    "name" : "smacc"
+  }, {
+    "name" : "table_brand_id"
+  } ]
+}

@@ -1,0 +1,36 @@
+{
+  "name" : "car_item",
+  "type" : "basic",
+  "fields" : [ {
+    "name" : "id",
+    "fieldType" : "bigint"
+  }, {
+    "name" : "code",
+    "fieldType" : "string"
+  }, {
+    "name" : "rank",
+    "fieldType" : "string"
+  }, {
+    "name" : "description_english",
+    "fieldType" : "string"
+  }, {
+    "name" : "description_french",
+    "fieldType" : "string"
+  }, {
+    "name" : "creation_date",
+    "fieldType" : "timestamp"
+  }, {
+    "name" : "created_by",
+    "fieldType" : "string"
+  }, {
+    "name" : "updated_date",
+    "fieldType" : "timestamp"
+  }, {
+    "name" : "updated_by",
+    "fieldType" : "string"
+  }, {
+    "name" : "car_itemclass_id",
+    "fieldType" : "bigint"
+  } ],
+  "filter" : null
+}

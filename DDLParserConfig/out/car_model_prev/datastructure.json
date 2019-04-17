@@ -1,0 +1,48 @@
+{
+  "name" : "car_model_prev",
+  "type" : "basic",
+  "fields" : [ {
+    "name" : "id",
+    "fieldType" : "bigint"
+  }, {
+    "name" : "rank",
+    "fieldType" : "string"
+  }, {
+    "name" : "description_french",
+    "fieldType" : "string"
+  }, {
+    "name" : "description_english",
+    "fieldType" : "string"
+  }, {
+    "name" : "fiscal_type",
+    "fieldType" : "string"
+  }, {
+    "name" : "commercial_segment",
+    "fieldType" : "string"
+  }, {
+    "name" : "model_group",
+    "fieldType" : "string"
+  }, {
+    "name" : "creation_date",
+    "fieldType" : "timestamp"
+  }, {
+    "name" : "created_by",
+    "fieldType" : "string"
+  }, {
+    "name" : "updated_date",
+    "fieldType" : "timestamp"
+  }, {
+    "name" : "updated_by",
+    "fieldType" : "string"
+  }, {
+    "name" : "car_brand_id",
+    "fieldType" : "bigint"
+  }, {
+    "name" : "car_programmation_id",
+    "fieldType" : "bigint"
+  }, {
+    "name" : "car_type_id",
+    "fieldType" : "bigint"
+  } ],
+  "filter" : null
+}

@@ -1,0 +1,12 @@
+{
+  "name" : "car_option_car_model_prog_pfg",
+  "type" : "basic",
+  "fields" : [ {
+    "name" : "car_model_prog_pfgs_id",
+    "fieldType" : "bigint"
+  }, {
+    "name" : "car_options_id",
+    "fieldType" : "bigint"
+  } ],
+  "filter" : null
+}

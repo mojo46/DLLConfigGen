@@ -1,0 +1,7 @@
+{
+  "name":"%tablename%",
+  "type":"basic",
+  "fields": "%fields%",
+  "computedFields": "%computedFields%",
+  "filter": null
+}

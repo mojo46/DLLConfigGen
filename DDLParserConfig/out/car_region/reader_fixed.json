@@ -1,0 +1,25 @@
+{
+  "path" : "hdfs://bighdpope/data/transit/irn_66929_pis/input/dfp/DB/pis_01_db/TABLES/car_region",
+  "type" : "fixed",
+  "fields" : [ {
+    "name" : "id"
+  }, {
+    "name" : "code"
+  }, {
+    "name" : "rank"
+  }, {
+    "name" : "active_flag"
+  }, {
+    "name" : "description_english"
+  }, {
+    "name" : "description_french"
+  }, {
+    "name" : "creation_date"
+  }, {
+    "name" : "created_by"
+  }, {
+    "name" : "updated_date"
+  }, {
+    "name" : "updated_by"
+  } ]
+}

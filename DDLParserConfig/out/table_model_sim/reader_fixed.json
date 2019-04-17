@@ -1,0 +1,17 @@
+{
+  "path" : "hdfs://bighdpope/data/transit/irn_66929_pis/input/dfp/DB/pis_01_db/TABLES/table_model_sim",
+  "type" : "fixed",
+  "fields" : [ {
+    "name" : "id"
+  }, {
+    "name" : "brand_sim"
+  }, {
+    "name" : "model_sim"
+  }, {
+    "name" : "brand_3_p"
+  }, {
+    "name" : "project_code"
+  }, {
+    "name" : "car_type"
+  } ]
+}

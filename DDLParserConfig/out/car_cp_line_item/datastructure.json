@@ -1,0 +1,66 @@
+{
+  "name" : "car_cp_line_item",
+  "type" : "basic",
+  "fields" : [ {
+    "name" : "id",
+    "fieldType" : "bigint"
+  }, {
+    "name" : "cp",
+    "fieldType" : "timestamp"
+  }, {
+    "name" : "sub_model",
+    "fieldType" : "string"
+  }, {
+    "name" : "fiscal_type",
+    "fieldType" : "string"
+  }, {
+    "name" : "mandatory_flag",
+    "fieldType" : "string"
+  }, {
+    "name" : "start_manufacturing_short_term",
+    "fieldType" : "string"
+  }, {
+    "name" : "end_manufacturing_short_term",
+    "fieldType" : "string"
+  }, {
+    "name" : "start_sales_short_term",
+    "fieldType" : "string"
+  }, {
+    "name" : "end_sales_short_term",
+    "fieldType" : "string"
+  }, {
+    "name" : "start_manufacturing_long_term",
+    "fieldType" : "string"
+  }, {
+    "name" : "end_manufacturing_long_term",
+    "fieldType" : "string"
+  }, {
+    "name" : "start_sales_long_term",
+    "fieldType" : "string"
+  }, {
+    "name" : "end_sales_long_term",
+    "fieldType" : "string"
+  }, {
+    "name" : "creation_date",
+    "fieldType" : "timestamp"
+  }, {
+    "name" : "created_by",
+    "fieldType" : "string"
+  }, {
+    "name" : "updated_date",
+    "fieldType" : "timestamp"
+  }, {
+    "name" : "updated_by",
+    "fieldType" : "string"
+  }, {
+    "name" : "version",
+    "fieldType" : "bigint"
+  }, {
+    "name" : "car_item_id",
+    "fieldType" : "bigint"
+  }, {
+    "name" : "car_cp_line_model_id",
+    "fieldType" : "bigint"
+  } ],
+  "filter" : null
+}

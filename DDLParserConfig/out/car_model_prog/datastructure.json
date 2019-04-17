@@ -1,0 +1,15 @@
+{
+  "name" : "car_model_prog",
+  "type" : "basic",
+  "fields" : [ {
+    "name" : "id",
+    "fieldType" : "bigint"
+  }, {
+    "name" : "rank",
+    "fieldType" : "string"
+  }, {
+    "name" : "rank_3_p",
+    "fieldType" : "string"
+  } ],
+  "filter" : null
+}

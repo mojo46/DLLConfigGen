@@ -1,0 +1,18 @@
+{
+  "name" : "car_esr",
+  "type" : "basic",
+  "fields" : [ {
+    "name" : "id",
+    "fieldType" : "bigint"
+  }, {
+    "name" : "code",
+    "fieldType" : "string"
+  }, {
+    "name" : "rank",
+    "fieldType" : "string"
+  }, {
+    "name" : "rank_3_p",
+    "fieldType" : "string"
+  } ],
+  "filter" : null
+}

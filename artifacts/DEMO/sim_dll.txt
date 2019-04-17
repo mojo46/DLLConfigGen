@@ -1,0 +1,7 @@
+CREATE EXTERNAL TABLE `co01_user`(                                            
+  `co01cdusr` varchar(10),                                                         
+  `co01nom` varchar(10),                                                           
+  `co01pnom` varchar(10),                                                          
+  `co01email` varchar(10),                                                         
+  `co01dmaj` varchar(10))                                                          
+;
