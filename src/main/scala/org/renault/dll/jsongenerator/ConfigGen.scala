@@ -10,15 +10,12 @@ import scala.collection.mutable.StringBuilder
 import collection.JavaConversions._
 import scala.collection.mutable.ListBuffer
 import scala.io.Source
-
 import org.json4s._
 import org.json4s.jackson.Serialization.write
 import org.json4s.jackson.JsonMethods._
 
 
 object ConfigGen {
-
-  println("\n\n$$$$$$$$$$$$$$$$$config gen object is called$$$$$$$$$$$$$$$$$$$")
 
   var globalTblName = ""
   var flag: Boolean = false
@@ -29,14 +26,13 @@ object ConfigGen {
   var dsColNameAndAliases: Map[String, Map[String, String]] = Map()
 
   def populateDSColsAndAliases(wb: Workbook) = {
-    println("####### Inside populateDSColsAndAliases function ######")
-    val dataStructureSheet: Sheet = wb.getSheet("DataStructure")
 
+    val dataStructureSheet: Sheet = wb.getSheet("DataStructure")
     dsColNameAndAliases = dataStructureSheet.rowIterator().filter(x => x.getRowNum != 0).map { eachRow =>
       (eachRow.getCell(0).getStringCellValue, eachRow.getCell(1).getStringCellValue, eachRow.getCell(4).getStringCellValue)
     }.toList.groupBy(_._1).mapValues(_.map(r => (r._2, r._3)).toMap)
 
-    dataStructureSheet.rowIterator().filter(x=>x.getRowNum != 0 ).map(e=>println("datastructure sheet:"+e))
+    if(dataStructureSheet.rowIterator().filter(x=>x.getRowNum != 0 ).map(e=>println(e)) != null){println("DataStructure Sheet is Created")}
 
   }
 
@@ -58,23 +54,23 @@ object ConfigGen {
 
   def transformByLookup(k: String, v: String): String = {
 
-    println("####### Inside transformByLookup function ######")
-
     if (k.equalsIgnoreCase("name")) {
       if (dsColNameAndAliases.get(globalTblName).get.get(v).get.isEmpty) {
         v
-      } else {
-        dsColNameAndAliases.get(globalTblName).get.get(v).get
-      }
+      } else dsColNameAndAliases.get(globalTblName).get.get(v).get
     }
     else v
 
   }
 
-  def getTableMap(wb: Workbook, sheetName: String, addTechColumns: Boolean = false, appendComputeColumns: Boolean = false, filterFunc: (((String, String)) => Boolean) = (x: (String, String)) => {
-    true
-  }, transformFunc: (String, String) => String = (x: String, y: String) => y, lookupNeeded: Boolean = false): Map[String, List[Map[String, String]]] = {
+  def getTableMap(wb: Workbook, sheetName: String,
+                  addTechColumns: Boolean = false,
+                  appendComputeColumns: Boolean = false,
+                  filterFunc: (((String, String)) => Boolean) = (x: (String, String)) => {true},
+                  transformFunc: (String, String) => String = (x: String, y: String) => y,
+                  lookupNeeded: Boolean = false): Map[String, List[Map[String, String]]] = {
 
+    println("Inside Get table Map")
     jsonBuffer.clear()
 
     val desiredSheet: Sheet = wb.getSheet(sheetName)
@@ -116,6 +112,8 @@ object ConfigGen {
       computeColSheet.rowIterator().foreach {
         rw =>
 
+          println("computed column sheet == RW :",rw)
+
           val tbl = rw.getCell(0).getStringCellValue
 
           if (rw.getRowNum != 0) {
@@ -143,7 +141,7 @@ object ConfigGen {
 
     desiredSheet.rowIterator().foreach {
       rw =>
-
+        println("desired sheet == RW :",rw)
         globalTblName = rw.getCell(0).getStringCellValue
 
         if (rw.getRowNum != 0 && (!sheetName.matches("Persister") || (lookupNeeded == true && dsColNameAndAliases.get(globalTblName).get.keySet.contains(rw.getCell(1).getStringCellValue)) || sheetName.matches("Persister"))) {
@@ -175,10 +173,6 @@ object ConfigGen {
   }
 
   def dumpJsons(outputPath: String, tblName: String, content: StringBuilder, readerFormat: String) = {
-
-    println("####### Inside dumpJsons function ######")
-
-
     val file = new File(outputPath + "//" + tblName.toLowerCase + "//" + "reader_" + readerFormat + ".json")
     file.getParentFile.mkdirs();
     //val writer = new FileWriter(file)
@@ -197,7 +191,7 @@ object ConfigGen {
 
     context foreach { entry =>
       val file = new File(outputPath + "//" + entry._1.toLowerCase + "//" + jsonFileName + ".json")
-      file.getParentFile.mkdirs();
+      file.getParentFile.mkdirs()
       //val writer = new FileWriter(file)
       //writer.write(pretty(entry._2))
       import java.io.FileOutputStream
@@ -219,9 +213,6 @@ object ConfigGen {
 
   def updateContext(tbl: String, masterJson: JValue, updateValue: JValue, updateKey: String) = {
 
-    println("####### Inside updateContext function ######")
-
-
     if (!context.isDefinedAt(tbl)) {
       val finalJson: JValue = masterJson mapField {
         case (`updateKey`, JString(str)) => (s"${updateKey}", updateValue)
@@ -241,8 +232,6 @@ object ConfigGen {
   }
 
   def generateReaders(jsonTemplateFile: String, outputPath: String, finalList: Map[String, List[Map[String, String]]], readerFormat: String): Unit = {
-
-    println("####### Inside generateReaders function ######")
 
     finalList.foreach { eachTable =>
       jsonString.clear();
@@ -279,10 +268,6 @@ object ConfigGen {
 
   def main(args: Array[String]): Unit = {
 
-
-    println("$$$$$$$$$$$$$$$$$ inside main function $$$$$$$$$$$$$$$$$$$")
-
-
     if (args.length != 9) {
       Console.println("Insufficient Arguments - Usage: ClassName <excel - input path> <persister json template> <datastructure json template> <database name - eg: db_raw_irn_66929_pis> <output path> <reader_format> <Need datastructure (Y/N)> <Do you have compute cols? (Y/N)")
       System.exit(1)
@@ -309,15 +294,15 @@ object ConfigGen {
 
     val deletePath = new File(outputPath)
 
-    FileUtils.deleteDirectory(deletePath)
+    if (FileUtils.deleteDirectory(deletePath) != null) {println("output path is cleared")}
 
     val wb: Workbook = WorkbookFactory.create(new File(excelPath))
+    if(wb.nonEmpty){println("The excel file is loaded into the WORKBOOK")}
 
-    if (needDataStructure == 'y') { populateDSColsAndAliases(wb) }
-
+    if (needDataStructure == 'y') { println("\nCall function ==> populateDSColsAndAliases() \n");populateDSColsAndAliases(wb) }
 
     val persister: Map[String, List[Map[String, String]]] = if (needDataStructure == 'y') {
-      println("$$$$$$$$$$$$$$$$$ inside confgen persiter $$$$$$$$$$$$$$$$$$$")
+      println("$$$$$$$$$$$$$$$$$ inside persiter $$$$$$$$$$$$$$$$$$$")
       getTableMap(wb, "Persister", addTechColumns = true, appendComputeColumns = doYouHaveComputeCols, transformFunc = transformByLookup, lookupNeeded = true)
     }
     else {
@@ -327,7 +312,7 @@ object ConfigGen {
     generateJsonList(persisterTemplate, persister, "fields", dbName)
 
     dumpJsons(outputPath, s"persister_$readerFormat")
-//    printJsons()
+   printJsons()
 
     if (needDataStructure == 'y') {
       val dataStructure: Map[String, List[Map[String, String]]] = getTableMap(wb, "DataStructure", lookupNeeded = true)
@@ -338,7 +323,7 @@ object ConfigGen {
       generateJsonList(datastructTemplate, computedFields, "computedFields", dbName)
 
       dumpJsons(outputPath, "datastructure")
-//      printJsons()
+      printJsons()
     }
 
     if (readerFormat.equalsIgnoreCase("fixed")) {
@@ -348,13 +333,13 @@ object ConfigGen {
       generateJsonList(readerTemplate, reader, "fields", dbName)
 
       dumpJsons(outputPath, s"reader_fixed")
-//      printJsons()
+      printJsons()
 
     }
     else {
       generateReaders(readerTemplate, outputPath, persister, readerFormat)
       dumpJsons(outputPath, s"reader_$readerFormat")
-//      printJsons()
+     printJsons()
     }
 
   }

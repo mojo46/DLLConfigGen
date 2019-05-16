@@ -8,6 +8,7 @@ import org.modeshape.sequencer.ddl.StandardDdlLexicon.DEFAULT_VALUE
 import org.modeshape.sequencer.ddl.StandardDdlLexicon.TYPE_COLUMN_DEFINITION
 import org.modeshape.sequencer.ddl.StandardDdlLexicon.TYPE_CREATE_TABLE_STATEMENT
 import org.modeshape.sequencer.ddl.StandardDdlLexicon.TYPE_TABLE_CONSTRAINT
+
 import java.io.BufferedReader
 import java.io.File
 import java.io.FileReader
@@ -15,10 +16,10 @@ import java.io.IOException
 import java.io.PrintStream
 import java.util
 
-
 import org.modeshape.sequencer.ddl.DdlParsers
 import org.modeshape.sequencer.ddl.StandardDdlLexicon
 import org.modeshape.sequencer.ddl.node.AstNode
+
 import org.apache.log4j.Level
 import org.apache.log4j.Logger
 

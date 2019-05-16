@@ -47,9 +47,9 @@ object Driver {
     // Now parse the file .  .  .  .
     parser = Parser
     //    parser.setDebugLevel();
-    try
+    try {
       database = parser.parse(file)
-
+    }
     catch {
       case e: IOException =>
         e.printStackTrace()
@@ -78,6 +78,7 @@ object Driver {
       util.writeSheetHeader("Fixed", util.csvToRowData(conf.getProperty("fixedReader_header")))
       util.writeRows("Fixed", generateFixedReaderData(database))
     }
+
     util.saveAsExcel(argv(2))
     util.flushCurrentWB()
   }
